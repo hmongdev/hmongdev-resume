@@ -1,6 +1,6 @@
 const Contact = () => {
 	return (
-		<main className="flex grow justify-center items-center bg-red-300">
+		<main className="flex grow justify-center items-center ">
 			Contact
 		</main>
 	);

@@ -1,6 +1,6 @@
 const About = () => {
 	return (
-		<main className="flex grow justify-center items-center bg-red-400">
+		<main className="flex grow justify-center items-center ">
 			About
 		</main>
 	);
