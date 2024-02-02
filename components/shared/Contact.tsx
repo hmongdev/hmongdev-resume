@@ -1,9 +1,5 @@
 const Contact = () => {
-	return (
-		<main className="flex h-[900px]justify-center items-center">
-			Contact
-		</main>
-	);
+	return <main>Contact</main>;
 };
 
 export default Contact;

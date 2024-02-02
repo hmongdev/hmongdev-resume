@@ -1,9 +1,5 @@
 const Portfolio = () => {
-	return (
-		<main className="flex h-[900px]justify-center items-center">
-			Portfolio
-		</main>
-	);
+	return <main>About</main>;
 };
 
 export default Portfolio;
