@@ -1,5 +1,6 @@
 'use client';
 
+import Portfolio from '@/components/shared/Portfolio';
 import { usePathname } from 'next/navigation';
 
 type HomeProps = {
@@ -11,7 +12,7 @@ const Home = ({ pathName }: HomeProps) => {
 
 	return (
 		<main className="flex justify-center items-center h-full">
-			<p>{`This is the pathName: ` + path}</p>
+			{path === path && <Portfolio />}
 		</main>
 	);
 };

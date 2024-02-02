@@ -1,5 +1,7 @@
 const Education = () => {
-	return <div>Education</div>;
+		<main className="flex justify-center items-center h-full">
+			return Education
+		</main>;
 };
 
 export default Education;
