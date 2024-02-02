@@ -1,13 +1,14 @@
 'use client';
 
-import { ModeToggle } from '@/components/theme/ModeToggle';
+import Footer from '@/components/shared/Footer';
+import NavHeader from '@/components/shared/NavHeader';
 
 const Home = () => {
 	return (
 		<div>
+			<NavHeader />
 			<h1>Hello world!</h1>
-
-			<ModeToggle />
+			<Footer />
 		</div>
 	);
 };
