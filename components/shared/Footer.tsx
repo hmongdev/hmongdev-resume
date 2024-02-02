@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const Footer = () => {
 	return (
-		<div className="flex justify-between items-center w-full p-2 border-t-[1px] border-zinc-700 absolute bottom-0 text-gray-500">
+		<div className="flex justify-between items-center w-full p-2 border-t-[1px] border-zinc-700 text-gray-500">
 			<small>©️ 2024. Steve Yang. All rights reserved.</small>
 			<div className="flex gap-3">
 				<small>

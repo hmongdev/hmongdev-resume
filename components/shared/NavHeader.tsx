@@ -3,9 +3,11 @@ import {
 	NavigationMenuItem,
 	NavigationMenuList,
 } from '@/components/ui/navigation-menu';
+
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+
 import { Github } from 'lucide-react';
 
-import Image from 'next/image';
 import { ModeToggle } from '../theme/ModeToggle';
 import { Button } from '../ui/button';
 import { SearchBar } from './SearchBar';
@@ -21,13 +23,17 @@ const NavHeader = () => {
 		<div className="flex justify-between items-center w-full p-2 border-b-[1px] border-zinc-700">
 			<section className="flex min-w-[150px] justify-around items-center">
 				<div className="flex justify-center">
-					<Image
-						alt="profile-photo"
-						width={40}
-						height={40}
-						className="rounded-full"
-						src="/assets/images/hmongdev_profile.png"
-					/>
+					<Avatar>
+						<AvatarImage
+							alt="profile-photo"
+							width={40}
+							height={40}
+							src="/assets/images/hmongdev_profile.png"
+						/>
+						<AvatarFallback>
+							SY
+						</AvatarFallback>
+					</Avatar>
 				</div>
 				<div className="flex-col">
 					<h1>Steve Yang</h1>

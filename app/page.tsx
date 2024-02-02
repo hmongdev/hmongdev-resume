@@ -7,13 +7,15 @@ import Sidebar from '@/components/shared/Sidebar';
 
 const Home = () => {
 	return (
-		<div className="flex-col">
+		<div className="flex flex-col h-dvh w-dvw">
 			<NavHeader />
-			<div className="flex">
+			<div className="flex w-full h-full">
 				<Sidebar />
-				<Dashboard />
+				<div className="flex flex-col justify-between w-full">
+					<Dashboard />
+					<Footer />
+				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 };
