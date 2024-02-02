@@ -1,3 +1,7 @@
 export default function Education() {
-	return <main className="grow">Education</main>;
+	return (
+		<main className="flex grow justify-center items-center bg-red-300">
+			Education
+		</main>
+	);
 }
