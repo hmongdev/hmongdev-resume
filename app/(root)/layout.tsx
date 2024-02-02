@@ -1,10 +1,11 @@
 'use client';
 
-import Footer from '@/components/shared/Footer';
 import NavHeader from '@/components/shared/NavHeader';
 import Sidebar from '@/components/shared/Sidebar';
 
+import Footer from '@/components/shared/Footer';
 import '../../app/globals.css';
+import DynamicPage from './[page]/page';
 
 type LayoutProps = {
 	children: React.ReactNode;
@@ -12,12 +13,12 @@ type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
 	return (
-		<div className="flex h-screen flex-col">
+		<div className="flex flex-col h-dvh">
 			<NavHeader />
 			<div className="flex w-full h-full">
 				<Sidebar />
 				<main className="flex flex-col justify-between w-full">
-					{children}
+					<DynamicPage />
 					<Footer />
 				</main>
 			</div>

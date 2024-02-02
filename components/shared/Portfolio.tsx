@@ -1,6 +1,6 @@
 const Portfolio = () => {
 	return (
-		<main className="flex justify-center items-center h-full">
+		<main className="flex h-[900px]justify-center items-center">
 			Portfolio
 		</main>
 	);

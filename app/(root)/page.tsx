@@ -1,9 +1,5 @@
 const page = () => {
-	return (
-		<main className="flex justify-center items-center h-full">
-			Home Page
-		</main>
-	);
+	return <h1>Home Page</h1>;
 };
 
 export default page;
