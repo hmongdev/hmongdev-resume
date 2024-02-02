@@ -16,7 +16,7 @@ export default function RootLayout({ children }: LayoutProps) {
 			<NavHeader />
 			<div className="flex w-full h-full">
 				<Sidebar />
-				<main className="flex flex-col justify-between w-full bg-green-900">
+				<main className="flex flex-col justify-between w-full">
 					{children}
 					<Footer />
 				</main>
