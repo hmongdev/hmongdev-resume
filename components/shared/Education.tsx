@@ -1,7 +1,7 @@
-const Education = () => {
+export default function Education() {
+	return (
 		<main className="flex justify-center items-center h-full">
-			return Education
-		</main>;
-};
-
-export default Education;
+			Education
+		</main>
+	);
+}

@@ -1,20 +1,48 @@
 'use client';
-
-import Portfolio from '@/components/shared/Portfolio';
+import dynamic from 'next/dynamic';
 import { usePathname } from 'next/navigation';
 
-type HomeProps = {
-	pathName: string;
-};
-
-const Home = ({ pathName }: HomeProps) => {
+const DynamicPage = () => {
 	const path = usePathname();
 
-	return (
-		<main className="flex justify-center items-center h-full">
-			{path === path && <Portfolio />}
-		</main>
-	);
+	const loadComponent = (page: string) => {
+		switch (page) {
+			case '/education':
+				return dynamic(
+					() =>
+						import(
+							'../../../components/shared/Education'
+						)
+				);
+			case '/portfolio':
+				return dynamic(
+					() =>
+						import(
+							'../../../components/shared/Portfolio'
+						)
+				);
+			case '/contact':
+				return dynamic(
+					() =>
+						import(
+							'../../../components/shared/Contact'
+						)
+				);
+			case '/about':
+				return dynamic(
+					() =>
+						import(
+							'../../../components/shared/About'
+						)
+				);
+			default:
+				return null;
+		}
+	};
+
+	const Component = loadComponent(path);
+
+	return <div>{Component && <Component />}</div>;
 };
 
-export default Home;
+export default DynamicPage;

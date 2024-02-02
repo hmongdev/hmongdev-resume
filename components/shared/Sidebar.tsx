@@ -17,6 +17,7 @@ const routes = [
 ];
 
 export default function Sidebar() {
+
 	return (
 		<nav className="flex flex-col gap-2 justify-start min-w-[200px] p-2 border-r-[1px] border-zinc-800 z-20 sticky">
 			{routes.map((route) => (
