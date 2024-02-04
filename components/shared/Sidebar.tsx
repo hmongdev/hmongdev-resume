@@ -1,5 +1,5 @@
 'use client';
-import { BookA, Contact, Folders, School } from 'lucide-react';
+import { BookA, Folders, School, UserRoundSearch } from 'lucide-react';
 import Link from 'next/link';
 
 const routes = [
@@ -28,7 +28,7 @@ const getIcon = (icon: string) => {
 		case 'school':
 			return <School />;
 		case 'contact':
-			return <Contact />;
+			return <UserRoundSearch />;
 		case 'bookA':
 			return <BookA />;
 		default:
