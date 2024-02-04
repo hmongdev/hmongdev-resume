@@ -1,3 +1,4 @@
+'use client';
 import About from '@/components/shared/About';
 import Contact from '@/components/shared/Contact';
 import Education from '@/components/shared/Education';
