@@ -9,7 +9,6 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Github } from 'lucide-react';
 
 import Link from 'next/link';
-import { ModeToggle } from '../theme/ModeToggle';
 import { Button } from '../ui/button';
 import { SearchBar } from './SearchBar';
 
@@ -67,9 +66,6 @@ const NavHeader = () => {
 									}
 								/>
 							</Button>
-						</NavigationMenuItem>
-						<NavigationMenuItem>
-							<ModeToggle />
 						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>

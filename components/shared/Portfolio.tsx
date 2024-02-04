@@ -6,11 +6,11 @@ const Portfolio = () => {
 		<main className="grow">
 			<div
 				className="grid 
-					sm:grid-cols-1
+					sm:grid-cols-2
 					md:grid-cols-2
 					lg:grid-cols-3
 					xl:grid-cols-4
-					gap-4 bg-stone-900 p-4 rounded-md h-full">
+					gap-4 p-4 rounded-md">
 				{projects.map(
 					(project: {
 						title: string;
