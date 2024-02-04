@@ -4,6 +4,13 @@ import {
 	NavigationMenuList,
 } from '@/components/ui/navigation-menu';
 
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from '@/components/ui/tooltip';
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 import { Github } from 'lucide-react';
@@ -54,18 +61,30 @@ const NavHeader = () => {
 				<NavigationMenu>
 					<NavigationMenuList>
 						<NavigationMenuItem>
-							<Button
-								variant="outline"
-								size="icon"
-								onClick={
-									handleRoute
-								}>
-								<Github
-									size={
-										25
-									}
-								/>
-							</Button>
+							<TooltipProvider>
+								<Tooltip>
+									<TooltipTrigger>
+										<Button
+											variant="outline"
+											size="icon"
+											onClick={
+												handleRoute
+											}>
+											<Github
+												size={
+													25
+												}
+											/>
+										</Button>
+									</TooltipTrigger>
+									<TooltipContent>
+										<p>
+											Github
+											Repos
+										</p>
+									</TooltipContent>
+								</Tooltip>
+							</TooltipProvider>
 						</NavigationMenuItem>
 					</NavigationMenuList>
 				</NavigationMenu>
