@@ -41,7 +41,8 @@ const renderLink = (route: { name: string; icon: string }) => (
 		key={route.name}
 		href={`/${route.name.toLowerCase()}`}
 		passHref
-		className="w-full border-none px-2 py-3 rounded-lg  focus:bg-zinc-500">
+		className="flex gap-5 w-full border-none p-5 rounded-lg focus:bg-zinc-700">
+		{getIcon(route.icon)}
 		<p className="text-start">{route.name}</p>
 	</Link>
 );
@@ -52,8 +53,7 @@ export default function Sidebar() {
 			{routes.map((route) => (
 				<div
 					key={route.name}
-					className="flex justify-center items-center p-2 rounded hover:bg-zinc-800">
-					{getIcon(route.icon)}
+					className="flex justify-center items-center rounded hover:bg-zinc-800">
 					{renderLink(route)}
 				</div>
 			))}
