@@ -31,7 +31,7 @@ export function ProjectCard({
 					<CardTitle>{title}</CardTitle>
 				</CardHeader>
 
-				<div className="flex flex-wrap justify-center items-center rounded m-2 gap-1 w-full h-[100px]">
+				<div className="flex flex-wrap justify-center items-center rounded m-2 gap-1 max-w-[300px] h-[100px] truncate">
 					{skills.map((skill) => {
 						return (
 							<div

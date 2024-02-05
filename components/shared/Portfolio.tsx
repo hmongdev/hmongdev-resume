@@ -3,7 +3,7 @@ import { ProjectCard } from './ProjectCard';
 
 const Portfolio = () => {
 	return (
-		<main className="flex-1 grow justify-between items-start">
+		<main className="flex grow justify-center items-start">
 			<div
 				className="grid 
 					sm:grid-cols-1
