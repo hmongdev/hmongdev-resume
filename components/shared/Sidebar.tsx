@@ -8,7 +8,7 @@ const routes = [
 		icon: 'folders',
 	},
 	{
-		name: 'Education',
+		name: 'Experience',
 		icon: 'school',
 	},
 	{

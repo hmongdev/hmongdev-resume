@@ -1,7 +1,7 @@
-export default function Education() {
+export default function Experience() {
 	return (
 		<main className="flex grow justify-center items-center ">
-			Education
+			Experience
 		</main>
 	);
 }
