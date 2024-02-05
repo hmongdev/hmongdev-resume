@@ -6,10 +6,9 @@ const Portfolio = () => {
 		<main className="flex grow justify-center items-start">
 			<div
 				className="grid 
-					sm:grid-cols-1
-					md:grid-cols-2
+					md:grid-cols-1
 					lg:grid-cols-2
-					xl:grid-cols-4
+					xl:grid-cols-3
 					gap-4 p-4 rounded-md">
 				{projects.map(
 					(project: {
