@@ -1,4 +1,4 @@
-import { Card, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle } from '@/components/ui/card';
 import { ProjectCardProps } from '@/types';
 import { Github, Presentation } from 'lucide-react';
 import Image from 'next/image';
@@ -21,7 +21,7 @@ export function ProjectCard({
 				<div className="flex items-center group overflow-hidden w-fit h-[200px]">
 					<Image
 						alt="repoImage"
-						className="rounded-xl border border-zinc-900 duration-700 ease-in-out scale-100 blur-0 grayscale-0 object-cover"
+						className="rounded-xl border border-zinc-900 duration-700 ease-in-out scale-100 blur-0 grayscale-0"
 						width={370}
 						height={100}
 						src={imageUrl}
@@ -31,7 +31,7 @@ export function ProjectCard({
 					<CardTitle>{title}</CardTitle>
 				</CardHeader>
 
-				<div className="flex flex-wrap justify-center items-center rounded gap-2 w-full h-[100px]">
+				<div className="flex flex-wrap justify-center items-center rounded m-2 gap-1 w-full h-[100px]">
 					{skills.map((skill) => {
 						return (
 							<div
@@ -43,28 +43,22 @@ export function ProjectCard({
 					})}
 				</div>
 
-				<CardFooter className="w-full">
-					<div className="flex w-full justify-center items-center gap-3">
-						<Button
-							onClick={() =>
-								handleRoute(
-									githubUrl
-								)
-							}
-							variant="outline">
-							<Github />
-						</Button>
-						<Button
-							onClick={() =>
-								handleRoute(
-									deployUrl
-								)
-							}
-							variant="outline">
-							<Presentation />
-						</Button>
-					</div>
-				</CardFooter>
+				<div className="flex w-full justify-center items-center gap-3">
+					<Button
+						onClick={() =>
+							handleRoute(githubUrl)
+						}
+						variant="outline">
+						<Github />
+					</Button>
+					<Button
+						onClick={() =>
+							handleRoute(deployUrl)
+						}
+						variant="outline">
+						<Presentation />
+					</Button>
+				</div>
 			</div>
 		</Card>
 	);
