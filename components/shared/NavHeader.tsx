@@ -12,9 +12,16 @@ import {
 	TooltipTrigger,
 } from '@/components/ui/tooltip';
 
+import {
+	DropdownMenu,
+	DropdownMenuContent,
+	DropdownMenuItem,
+	DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
-import { Github } from 'lucide-react';
+import { Github, Menu } from 'lucide-react';
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -72,6 +79,39 @@ const NavHeader = () => {
 			<section>
 				<NavigationMenu>
 					<NavigationMenuList>
+						<NavigationMenuItem className="md:hidden">
+							<DropdownMenu>
+								<DropdownMenuTrigger>
+									<Button
+										variant="outline"
+										size="icon">
+										<Menu />
+									</Button>
+								</DropdownMenuTrigger>
+								<DropdownMenuContent>
+									<DropdownMenuItem>
+										<Link href="/portfolio">
+											Portfolio
+										</Link>
+									</DropdownMenuItem>
+									<DropdownMenuItem>
+										<Link href="/experience">
+											Experience
+										</Link>
+									</DropdownMenuItem>
+									<DropdownMenuItem>
+										<Link href="/contact">
+											Contact
+										</Link>
+									</DropdownMenuItem>
+									<DropdownMenuItem>
+										<Link href="/about">
+											About
+										</Link>
+									</DropdownMenuItem>
+								</DropdownMenuContent>
+							</DropdownMenu>
+						</NavigationMenuItem>
 						<NavigationMenuItem>
 							<TooltipProvider>
 								<Tooltip>

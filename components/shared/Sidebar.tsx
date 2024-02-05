@@ -18,7 +18,7 @@ const getIcon = (icon: string) => {
 	}
 };
 
-const renderLink = (route: { name: string; icon: string }) => (
+export const renderLink = (route: { name: string; icon: string }) => (
 	<Link
 		key={route.name}
 		href={`/${route.name.toLowerCase()}`}
