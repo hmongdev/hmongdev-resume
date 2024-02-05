@@ -71,3 +71,55 @@ export const projects = [
 		deployUrl: 'https://promptopia-omega-steel.vercel.app/',
 	},
 ];
+
+
+export const jobHistory = [
+	{
+		company: 'Prime Digital Academy',
+		position: 'Fullstack Engineering Student',
+		location: 'Minneapolis, MN',
+		years: '2022 - 2022',
+	},
+	{
+		company: 'Software For Good',
+		position: 'Software Engineer Apprentice',
+		location: 'Remote, MN',
+		years: '2021 - 2022',
+	},
+	{
+		company: 'Colder Products Company',
+		position: 'Cell Lead',
+		location: 'Roseville, MN',
+		years: '2021 - 2021',
+	},
+	{
+		company: 'The Cove',
+		position: 'Team Member',
+		location: 'Dinkytown, MN',
+		years: '2019 - 2021',
+	},
+	{
+		company: 'UMN - Off-Campus Living (OCL)',
+		position: 'Renter Education Liasion',
+		location: 'Minneapolis, MN',
+		years: '2018 - 2019',
+	},
+	{
+		company: 'Restorative Justice Community Action',
+		position: 'Intake and Administrative Assistant',
+		location: 'Minneapolis, MN',
+		years: '2017 - 2018',
+	},
+	{
+		company: 'Goodwill Easter Seals-Minnesota',
+		position: 'Team Member',
+		location: 'Chanhassen, MN',
+		years: '2016 - 2017',
+	},
+	{
+		company: 'Noodles and Co.',
+		position: 'Team Member',
+		location: 'Chanhassen, MN',
+		years: '2015 - 2017',
+	},
+];
