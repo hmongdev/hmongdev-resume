@@ -123,3 +123,22 @@ export const jobHistory = [
 		years: '2015 - 2017',
 	},
 ];
+
+export const routes = [
+	{
+		name: 'Portfolio',
+		icon: 'folders',
+	},
+	{
+		name: 'Experience',
+		icon: 'school',
+	},
+	{
+		name: 'Contact',
+		icon: 'contact',
+	},
+	{
+		name: 'About',
+		icon: 'bookA',
+	},
+];

@@ -1,25 +1,7 @@
 'use client';
+import { routes } from '@/constants';
 import { BookA, Folders, School, UserRoundSearch } from 'lucide-react';
 import Link from 'next/link';
-
-const routes = [
-	{
-		name: 'Portfolio',
-		icon: 'folders',
-	},
-	{
-		name: 'Experience',
-		icon: 'school',
-	},
-	{
-		name: 'Contact',
-		icon: 'contact',
-	},
-	{
-		name: 'About',
-		icon: 'bookA',
-	},
-];
 
 const getIcon = (icon: string) => {
 	switch (icon) {
