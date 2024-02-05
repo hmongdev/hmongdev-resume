@@ -36,7 +36,7 @@ export function ProjectCard({
 						return (
 							<div
 								key={skill}
-								className="flex bg-zinc-800 border border-zinc-700 rounded-full px-2 w-fit text-xs">
+								className="flex bg-zinc-800 border border-zinc-700 rounded-full px-2 w-fit text-sm">
 								<p>{skill}</p>
 							</div>
 						);
