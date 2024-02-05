@@ -49,7 +49,7 @@ const renderLink = (route: { name: string; icon: string }) => (
 
 export default function Sidebar() {
 	return (
-		<nav className="flex flex-col gap-2 justify-start min-w-[300px] p-2 border-r-[1px] border-zinc-800 z-20">
+		<nav className="hidden sm:flex flex-col gap-2 justify-start min-w-[300px] p-2 border-r-[1px] border-zinc-800 z-20">
 			{routes.map((route) => (
 				<div
 					key={route.name}

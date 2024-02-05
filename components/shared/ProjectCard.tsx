@@ -6,6 +6,7 @@ import { Button } from '../ui/button';
 
 export function ProjectCard({
 	title,
+	skills,
 	imageUrl,
 	githubUrl,
 	deployUrl,
@@ -29,6 +30,18 @@ export function ProjectCard({
 				<CardHeader className="w-full p-2">
 					<CardTitle>{title}</CardTitle>
 				</CardHeader>
+
+				<div className="flex flex-wrap justify-center items-center rounded gap-2 w-full h-[100px]">
+					{skills.map((skill) => {
+						return (
+							<div
+								key={skill}
+								className="flex bg-zinc-800 border border-zinc-700 rounded-full px-2 w-fit text-xs">
+								<p>{skill}</p>
+							</div>
+						);
+					})}
+				</div>
 
 				<CardFooter className="w-full">
 					<div className="flex w-full justify-center items-center gap-3">

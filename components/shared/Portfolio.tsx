@@ -3,12 +3,12 @@ import { ProjectCard } from './ProjectCard';
 
 const Portfolio = () => {
 	return (
-		<main className="grow">
+		<main className="flex-1 grow justify-between items-start">
 			<div
 				className="grid 
-					sm:grid-cols-2
+					sm:grid-cols-1
 					md:grid-cols-2
-					lg:grid-cols-3
+					lg:grid-cols-2
 					xl:grid-cols-4
 					gap-4 p-4 rounded-md">
 				{projects.map(
