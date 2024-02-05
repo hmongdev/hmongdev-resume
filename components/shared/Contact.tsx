@@ -35,7 +35,7 @@ const Contact = () => {
 	};
 
 	return (
-		<main className="flex grow justify-center items-start p-5">
+		<main className="flex grow justify-center items-center p-5">
 			{contactButtons.map((button) => {
 				return (
 					<Button
