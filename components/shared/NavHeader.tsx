@@ -17,7 +17,6 @@ import { Github } from 'lucide-react';
 
 import Link from 'next/link';
 import { Button } from '../ui/button';
-import { SearchBar } from './SearchBar';
 
 const NavHeader = () => {
 	const handleRoute = () => {
@@ -53,9 +52,9 @@ const NavHeader = () => {
 				</div>
 			</section>
 
-			<section>
+			{/* <section>
 				<SearchBar />
-			</section>
+			</section> */}
 
 			<section>
 				<NavigationMenu>
