@@ -17,7 +17,7 @@ const aboutLinks = [
 		icon: '🥈',
 	},
 	{
-		text: 'Born into Relative Poverty, Family of 10',
+		text: 'Grew up in poverty',
 		href: 'https://en.wikipedia.org/wiki/Poverty_threshold#Relative_poverty',
 		icon: '👩🏻🧑🏻',
 	},
@@ -44,67 +44,28 @@ const About = () => {
 			</ul>
 
 			<section className="flex flex-col gap-5 border border-zinc-700 rounded-xl p-5 my-5">
-				<h1 className="text-2xl">Family Background</h1>
+				<h1 className="text-2xl text-center">
+					Why Coding?
+				</h1>
 				<p>
-					For their entire lives, my immigrant
-					parents worked low-income jobs and
-					fought constantly about money. This is
-					important because up until recently,
-					I've always had a negative relationship
-					with money.
+					Growing up in poverty with immigrant
+					parents, in a family of 10, is one of
+					the most humbling experiences I've had.
 				</p>
 				<p>
-					In a family of 10, I had a fairly
-					difficult childhood which shaped my
-					self-esteem, learning, and motivation.
+					Life wasn't easy for me, and I refuse to
+					let obstacles define my life.
 				</p>
-				<p>
-					I was extremely depressed as a kid, and
-					it took me a long time to heal trauma
-					and believe that I'm more capable than
-					the circumstances of my life.
-				</p>
-				<h1 className="text-2xl">Why Coding?</h1>
-				<p>
-					As a kid, I've always loved video games,
-					and building virtual worlds. However, I
-					never knew coding was something you
-					could do professionally -- which sounds
-					hard to believe, but that's how it was
-					for me.
-				</p>
-				<p>
-					It wasn't until after college, when I
-					lived with a roommate who had just
-					graduated with a Computer Science degree
-					and she was telling me about her new
-					Software Engineer job: working from
-					home, sitting at her desk all day, and
-					getting paid ALOT of money for it.
-				</p>
-
-				<p>
-					Some days, she didn't even do work. She
-					just took the day off and went for a
-					walk!
-				</p>
-
-				<p>
-					That entire concept just blew my mind,
-					honestly.
-				</p>
-
 				<p>
 					I got into coding because I want to make
-					money, and the things I want in life
-					cost money:
+					a better life for myself.
 				</p>
 
-				<p>1. Help my parents retire.</p>
-				<p>2. Buy a house.</p>
-				<p>3. Raise a family.</p>
-				<p>4. Start a business.</p>
-				<p>5. Become a philanthropist.</p>
+				<p>I want to help my parents retire.</p>
+				<p>I want to buy a house.</p>
+				<p>I want to raise a family.</p>
+				<p>I want to start a business.</p>
+				<p>I want to become a philanthropist.</p>
 			</section>
 		</main>
 	);
