@@ -26,23 +26,6 @@ const aboutLinks = [
 const About = () => {
 	return (
 		<main className="flex flex-col grow justify-start items-center p-10">
-			<ul className="flex-col gap-5">
-				{aboutLinks.map((link) => {
-					return (
-						<li className="hover:underline py-3">
-							<Link
-								href={link.href}
-								target="_blank"
-								rel="noopener noreferrer">
-								{link.icon +
-									' ' +
-									link.text}
-							</Link>
-						</li>
-					);
-				})}
-			</ul>
-
 			<section className="flex flex-col gap-5 border border-zinc-700 rounded-xl p-5 my-5">
 				<h1 className="text-2xl text-center">
 					Why Coding?
@@ -94,6 +77,22 @@ const About = () => {
 					parents retire.
 				</p>
 			</section>
+			<ul className="flex-col gap-5">
+				{aboutLinks.map((link) => {
+					return (
+						<li className="hover:underline py-3">
+							<Link
+								href={link.href}
+								target="_blank"
+								rel="noopener noreferrer">
+								{link.icon +
+									' ' +
+									link.text}
+							</Link>
+						</li>
+					);
+				})}
+			</ul>
 		</main>
 	);
 };
