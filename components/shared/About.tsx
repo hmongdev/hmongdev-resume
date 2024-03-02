@@ -49,23 +49,50 @@ const About = () => {
 				</h1>
 				<p>
 					Growing up in poverty with immigrant
-					parents, in a family of 10, is one of
-					the most humbling experiences I've had.
+					parents, in a family of 10 wasn't easy.
 				</p>
 				<p>
-					Life wasn't easy for me, and I refuse to
-					let obstacles define my life.
+					In the wise words of Randy Pausch from
+					<em>
+						{' '}
+						<Link href="https://www.cmu.edu/randyslecture/book/index.html">
+							<u>
+								"The Last
+								Lecture"
+							</u>
+						</Link>
+					</em>
+					, Professor Pausch said,{' '}
+					<em>
+						"We can't change the cards we're
+						dealt, just how we play the
+						hand."
+					</em>
+				</p>
+				<p>
+					It took me a long time to heal, and play
+					the hand I was dealt.
+				</p>
+				<p>
+					There are two main reasons why I got
+					into coding:
+				</p>
+				<p>
+					First, I've always loved art, video
+					games, and computers. Unfortuantely, I
+					was never exposed to coding until after
+					I graduated college.
+				</p>
+				<p>
+					Second, after working for over 30 years
+					of their lives, my parents are only
+					making $20/hour.
 				</p>
 				<p>
 					I got into coding because I want to make
-					a better life for myself.
+					a better life for myself, and help my
+					parents retire.
 				</p>
-
-				<p>I want to help my parents retire.</p>
-				<p>I want to buy a house.</p>
-				<p>I want to raise a family.</p>
-				<p>I want to start a business.</p>
-				<p>I want to become a philanthropist.</p>
 			</section>
 		</main>
 	);
