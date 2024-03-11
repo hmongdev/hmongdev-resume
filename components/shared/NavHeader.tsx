@@ -62,10 +62,12 @@ const NavHeader = () => {
 					</Link>
 				</div>
 				<div className="hidden md:flex md:flex-col">
-					<h1>Steve Yang</h1>
-					<em className="text-gray-500">
-						Jr. Developer
-					</em>
+					<Link href="/">
+						<em className="text-gray-500">
+							Jr. Developer
+						</em>
+						<h1>Steve Yang</h1>
+					</Link>
 				</div>
 			</section>
 
