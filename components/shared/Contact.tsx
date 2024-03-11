@@ -1,4 +1,4 @@
-import { Github, Linkedin, MailPlus } from 'lucide-react';
+import { Github, Linkedin, MailPlus, Youtube } from 'lucide-react';
 import { Button } from '../ui/button';
 
 export const contactButtons = [
@@ -14,6 +14,10 @@ export const contactButtons = [
 		name: 'gmail',
 		url: 'mailto:steveyangwork@gmail.com',
 	},
+	{
+		name: 'youtube',
+		url: 'https://www.youtube.com/watch?v=o59nBnUuMig&list=PLqZi44mRDJRlkh6JfAERimz8Bn2PGaAPe&ab_channel=HmongDev',
+	},
 ];
 
 const getIcon = (icon: string) => {
@@ -24,6 +28,8 @@ const getIcon = (icon: string) => {
 			return <Linkedin size={50} />;
 		case 'gmail':
 			return <MailPlus size={50} />;
+		case 'youtube':
+			return <Youtube size={50} />;
 		default:
 			return null;
 	}
