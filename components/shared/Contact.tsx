@@ -16,7 +16,7 @@ export const contactButtons = [
 	},
 	{
 		name: 'youtube',
-		url: 'https://www.youtube.com/watch?v=o59nBnUuMig&list=PLqZi44mRDJRlkh6JfAERimz8Bn2PGaAPe&ab_channel=HmongDev',
+		url: 'https://www.youtube.com/@HmongDev',
 	},
 ];
 
