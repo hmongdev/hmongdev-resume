@@ -47,25 +47,16 @@ const NavHeader = () => {
 		<div className="flex justify-between items-center w-full p-2 border-b-[1px] border-zinc-700">
 			<section className="flex min-fit gap-3 justify-around items-center">
 				<div className="flex justify-center">
-					<Link href="/">
+					<Link href="/portfolio">
 						<Avatar>
-							<AvatarImage
-								alt="profile-photo"
-								width={40}
-								height={40}
-								src="/assets/images/hmongdev_profile.png"
-							/>
-							<AvatarFallback>
-								SY
-							</AvatarFallback>
+							<AvatarImage alt="profile-photo" width={40} height={40} src="/assets/images/hmongdev_profile.png" />
+							<AvatarFallback>SY</AvatarFallback>
 						</Avatar>
 					</Link>
 				</div>
 				<div className="hidden md:flex md:flex-col">
 					<Link href="/">
-						<em className="text-gray-500">
-							Jr. Developer
-						</em>
+						<em className="text-gray-500">Jr. Developer</em>
 						<h1>Steve Yang</h1>
 					</Link>
 				</div>
@@ -73,9 +64,7 @@ const NavHeader = () => {
 
 			<section>
 				{/* <SearchBar /> */}
-				<div className="md:hidden">
-					{<h1>{formatRoute(path)}</h1>}
-				</div>
+				<div className="md:hidden">{<h1>{formatRoute(path)}</h1>}</div>
 			</section>
 
 			<section>
@@ -84,32 +73,22 @@ const NavHeader = () => {
 						<NavigationMenuItem className="md:hidden">
 							<DropdownMenu>
 								<DropdownMenuTrigger>
-									<Button
-										variant="outline"
-										size="icon">
+									<Button variant="outline" size="icon">
 										<Menu />
 									</Button>
 								</DropdownMenuTrigger>
 								<DropdownMenuContent>
 									<DropdownMenuItem>
-										<Link href="/portfolio">
-											Portfolio
-										</Link>
+										<Link href="/portfolio">Portfolio</Link>
 									</DropdownMenuItem>
 									<DropdownMenuItem>
-										<Link href="/experience">
-											Experience
-										</Link>
+										<Link href="/experience">Experience</Link>
 									</DropdownMenuItem>
 									<DropdownMenuItem>
-										<Link href="/contact">
-											Contact
-										</Link>
+										<Link href="/contact">Contact</Link>
 									</DropdownMenuItem>
 									<DropdownMenuItem>
-										<Link href="/about">
-											About
-										</Link>
+										<Link href="/about">About</Link>
 									</DropdownMenuItem>
 								</DropdownMenuContent>
 							</DropdownMenu>
@@ -118,24 +97,12 @@ const NavHeader = () => {
 							<TooltipProvider>
 								<Tooltip>
 									<TooltipTrigger>
-										<Button
-											variant="outline"
-											size="icon"
-											onClick={
-												handleRoute
-											}>
-											<Github
-												size={
-													25
-												}
-											/>
+										<Button variant="outline" size="icon" onClick={handleRoute}>
+											<Github size={25} />
 										</Button>
 									</TooltipTrigger>
 									<TooltipContent>
-										<p>
-											Github
-											Repos
-										</p>
+										<p>Github Repos</p>
 									</TooltipContent>
 								</Tooltip>
 							</TooltipProvider>

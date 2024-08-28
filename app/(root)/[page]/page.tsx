@@ -2,20 +2,26 @@
 import About from '@/components/shared/About';
 import Contact from '@/components/shared/Contact';
 import Experience from '@/components/shared/Experience';
-import Home from '@/components/shared/Home';
 import Portfolio from '@/components/shared/Portfolio';
-import { usePathname } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
 const DynamicPage = () => {
-	const path = usePathname();
+	const url = usePathname();
+	const router = useRouter();
+
+	useEffect(() => {
+		if (url === '/') {
+			router.push('/portfolio');
+		}
+	}, []);
 
 	return (
 		<div className="flex grow">
-			{path === '/' ? <Home /> : null}
-			{path === '/portfolio' ? <Portfolio /> : null}
-			{path === '/experience' ? <Experience /> : null}
-			{path === '/contact' ? <Contact /> : null}
-			{path === '/about' ? <About /> : null}
+			{url === '/portfolio' ? <Portfolio /> : null}
+			{url === '/experience' ? <Experience /> : null}
+			{url === '/contact' ? <Contact /> : null}
+			{url === '/about' ? <About /> : null}
 		</div>
 	);
 };
