@@ -1,23 +1,9 @@
 'use client';
-import {
-	NavigationMenu,
-	NavigationMenuItem,
-	NavigationMenuList,
-} from '@/components/ui/navigation-menu';
+import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from '@/components/ui/navigation-menu';
 
-import {
-	Tooltip,
-	TooltipContent,
-	TooltipProvider,
-	TooltipTrigger,
-} from '@/components/ui/tooltip';
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
-import {
-	DropdownMenu,
-	DropdownMenuContent,
-	DropdownMenuItem,
-	DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from '@/components/ui/dropdown-menu';
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
@@ -27,24 +13,19 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Button } from '../ui/button';
 
-const NavHeader = () => {
+const TopNavbar = () => {
 	const path = usePathname();
 
 	function formatRoute(route: string) {
-		return route && route.length > 0
-			? route.slice(1, 2).toUpperCase() + route.slice(2)
-			: route;
+		return route && route.length > 0 ? route.slice(1, 2).toUpperCase() + route.slice(2) : route;
 	}
 
 	const handleRoute = () => {
-		window.open(
-			'https://github.com/hmongdev?tab=repositories',
-			'_blank'
-		);
+		window.open('https://github.com/hmongdev?tab=repositories', '_blank');
 	};
 
 	return (
-		<div className="flex justify-between items-center w-full p-2 border-b-[1px] border-zinc-700">
+		<div className="flex justify-between items-center w-full p-2 border-b-[1px] bg-black border-zinc-700">
 			<section className="flex min-fit gap-3 justify-around items-center">
 				<div className="flex justify-center">
 					<Link href="/portfolio">
@@ -114,4 +95,4 @@ const NavHeader = () => {
 	);
 };
 
-export default NavHeader;
+export default TopNavbar;

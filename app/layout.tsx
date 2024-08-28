@@ -12,12 +12,8 @@ export default function RootLayout({ children }: any) {
 	return (
 		<>
 			<html lang="en" suppressHydrationWarning>
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="dark"
-					enableSystem
-					disableTransitionOnChange>
-					<body>{children}</body>
+				<ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
+					<body className="bg-black">{children}</body>
 				</ThemeProvider>
 			</html>
 		</>

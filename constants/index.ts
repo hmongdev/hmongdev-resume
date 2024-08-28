@@ -94,6 +94,12 @@ export const projects = [
 
 export const jobHistory = [
 	{
+		company: 'Hydra',
+		position: 'Front-End Software Engineer',
+		location: 'MN',
+		years: '2024 - 2024',
+	},
+	{
 		company: 'Prime Digital Academy',
 		position: 'Fullstack Engineering Student',
 		location: 'MN',
