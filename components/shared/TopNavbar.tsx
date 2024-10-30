@@ -27,20 +27,14 @@ const TopNavbar = () => {
 	return (
 		<div className="flex justify-between items-center w-full p-2 border-b-[1px] bg-black border-zinc-700">
 			<section className="flex min-fit gap-3 justify-around items-center">
-				<div className="flex justify-center">
-					<Link href="/portfolio">
-						<Avatar>
-							<AvatarImage alt="profile-photo" width={40} height={40} src="/assets/images/hmongdev_profile.png" />
-							<AvatarFallback>SY</AvatarFallback>
-						</Avatar>
-					</Link>
-				</div>
-				<div className="hidden md:flex md:flex-col">
-					<Link href="/">
-						<em className="text-gray-500">Jr. Developer</em>
-						<h1>Steve Yang</h1>
-					</Link>
-				</div>
+				<Link href="/portfolio" className="flex gap-2 items-center">
+					<Avatar>
+						<AvatarImage alt="profile-photo" width={40} height={40} src="/assets/images/hmongdev_profile.png" />
+						<AvatarFallback>SY</AvatarFallback>
+					</Avatar>
+					<h1>Steve Yang</h1>
+					<em className="text-gray-500">Jr. Developer</em>
+				</Link>
 			</section>
 
 			<section>
@@ -67,9 +61,6 @@ const TopNavbar = () => {
 									</DropdownMenuItem>
 									<DropdownMenuItem>
 										<Link href="/contact">Contact</Link>
-									</DropdownMenuItem>
-									<DropdownMenuItem>
-										<Link href="/about">About</Link>
 									</DropdownMenuItem>
 								</DropdownMenuContent>
 							</DropdownMenu>

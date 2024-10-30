@@ -162,8 +162,4 @@ export const routes = [
 		name: 'Contact',
 		icon: 'contact',
 	},
-	{
-		name: 'About',
-		icon: 'bookA',
-	},
 ];

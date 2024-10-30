@@ -1,5 +1,4 @@
 'use client';
-import About from '@/components/shared/About';
 import Contact from '@/components/shared/Contact';
 import Experience from '@/components/shared/Experience';
 import Portfolio from '@/components/shared/Portfolio';
@@ -21,7 +20,6 @@ const DynamicPage = () => {
 			{url === '/portfolio' ? <Portfolio /> : null}
 			{url === '/experience' ? <Experience /> : null}
 			{url === '/contact' ? <Contact /> : null}
-			{url === '/about' ? <About /> : null}
 		</div>
 	);
 };
