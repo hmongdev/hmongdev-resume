@@ -42,9 +42,9 @@ const Contact = () => {
 
 	return (
 		<main className="flex grow justify-center items-center p-5">
-			{contactButtons.map((button) => {
+			{contactButtons.map((button, index) => {
 				return (
-					<Button variant="outline" className="bg-red-500 m-2 h-fit" onClick={() => handleRoute(button.url)}>
+					<Button key={index} variant="outline" className="bg-red-500 m-2 h-fit" onClick={() => handleRoute(button.url)}>
 						{getIcon(button.name)}
 					</Button>
 				);

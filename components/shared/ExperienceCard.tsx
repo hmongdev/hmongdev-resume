@@ -3,9 +3,9 @@ import { jobHistory } from '@/constants';
 const ExperienceCard = () => {
 	return (
 		<div className="w-full p-2">
-			{jobHistory.map((job) => {
+			{jobHistory.map((job, index) => {
 				return (
-					<div className="flex flex-col w-3/5 justify-between gap-3 my-5 bg-zinc-900 rounded-lg border-zinc-700">
+					<div key={index} className="flex flex-col w-3/5 justify-between gap-3 my-5 bg-zinc-900 rounded-lg border-zinc-700">
 						<div className="flex justify-between">
 							<h3 className="text-xl p-2">{job.company}</h3>
 							<h1 className="text-lg p-2">{job.years}</h1>

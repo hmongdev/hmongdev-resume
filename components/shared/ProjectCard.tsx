@@ -32,11 +32,9 @@ export function ProjectCard({
 				</CardHeader>
 
 				<div className="flex flex-wrap justify-center items-center rounded m-2 gap-1 max-w-[300px] h-[100px] truncate">
-					{skills.map((skill) => {
+					{skills.map((skill, index) => {
 						return (
-							<div
-								key={skill}
-								className="flex bg-zinc-800 border border-zinc-700 rounded-full px-2 w-fit text-sm">
+							<div key={index} className="flex bg-zinc-800 border border-zinc-700 rounded-full px-2 w-fit text-sm">
 								<p>{skill}</p>
 							</div>
 						);
@@ -44,18 +42,10 @@ export function ProjectCard({
 				</div>
 
 				<div className="flex w-full justify-center items-center gap-3">
-					<Button
-						onClick={() =>
-							handleRoute(githubUrl)
-						}
-						variant="outline">
+					<Button onClick={() => handleRoute(githubUrl)} variant="outline">
 						<Github />
 					</Button>
-					<Button
-						onClick={() =>
-							handleRoute(deployUrl)
-						}
-						variant="outline">
+					<Button onClick={() => handleRoute(deployUrl)} variant="outline">
 						<Presentation />
 					</Button>
 				</div>
