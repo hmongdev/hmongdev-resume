@@ -33,7 +33,6 @@ const TopNavbar = () => {
 						<AvatarFallback>SY</AvatarFallback>
 					</Avatar>
 					<h1>Steve Yang</h1>
-					<em className="text-gray-500">Jr. Developer</em>
 				</Link>
 			</section>
 
